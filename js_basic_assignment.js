@@ -63,6 +63,9 @@ publicBusFare(65);
 
 */
 
+const friend1 = { name: "shuvo", friend: "sozib" };
+const friend2 = { name: "sozib", friend: "shuvo" };
+
 function isBestFriend(friend1, friend2) {
   if (friend1.name === friend2.friend && friend1.friend === friend2.name) {
     return true;
@@ -70,8 +73,5 @@ function isBestFriend(friend1, friend2) {
     return false;
   }
 }
-
-const friend1 = { name: "shuvo", friend: "sozib" };
-const friend2 = { name: "sozib", friend: "shuvo" };
 let friends = isBestFriend("shuvo", "sozib");
 console.log(friends);
